@@ -1,0 +1,44 @@
+{
+    "name": "elegram Virustotal Bot",
+    "description": "A telegram bot which can scan telegram files smaller than 32MB.",
+    "keywords": [
+        "telegram",
+        "virustotal"
+    ],
+    "repository": "https://github.com/CHEF-KOCH/Telegram-VirusTotal-Bot",
+    "env": {
+        "APP_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Telegram bot token. From Bot_Father",
+            "value": ""
+        },
+        "VIRUSTOTAL_API": {
+            "description": "Add your virustotal api.sign up to VirusTotal Community. Once you have a valid VirusTotal Community account you will find your personal API key in your personal settings section. This key is all you need to use the VirusTotal API.",
+            "value": ""
+        },
+        "userid": {
+            "description": "Enter the user id to which the bot should reply. (your user id)",
+            "value": ""
+        }
+    },
+    "addons": [
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
